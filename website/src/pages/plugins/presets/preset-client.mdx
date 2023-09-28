@@ -56,6 +56,7 @@ The `client` preset allows the following `config` options:
 - [`nonOptionalTypename`](/plugins/typescript/typescript#nonoptionaltypename): Automatically adds `__typename` field to the generated types, even when they are not specified in the selection set, and makes it non-optional.
 - [`avoidOptionals`](/plugins/typescript/typescript#avoidoptionals): This will cause the generator to avoid using TypeScript optionals (`?`) on types.
 - [`documentMode`](#documentmode): Allows you to control how the documents are generated.
+- [`addUnderscoreToArgsType`](#addUnderscoreToArgsType): By setting `addUnderscoreToArgsType` to `true`, the generated Args types will have an underscore added to their names. This can be useful to avoid conflicts with other identifiers in your codebase.
 
 For more information or feature request, please [refer to the repository discussions](https://github.com/dotansimha/graphql-code-generator/discussions).
 
